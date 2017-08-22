@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>vue请求后台</title>
+
+<script type="text/javascript" src="../../res/js/vue.js"></script>
+</head>
+<body>
+
+	
+</body>
+
+
+<script type="text/javascript">
+
+	var vm = new Vue({
+		ready: function(){
+			this.$http({
+				url: '',
+				method: 'POST',
+				data: {test:test}
+			}).then(function(){//成功
+				alert("success");
+			}, function(){//失败
+				alert("fail");
+			});
+		}
+	})
+	
+</script>
+</html>
